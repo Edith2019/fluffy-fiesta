@@ -7,10 +7,9 @@ export default async function authHome() {
     const {
         data: { user },
     } = await supabase.auth.getUser();
-
-    // if (!user) {
-    //     return redirect("/sign-in");
-    // }
+    if (!user) {
+        return redirect("/sign-in");
+    }
 
     return (
         <div className="flex flex-col gap-2 items-start">
