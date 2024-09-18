@@ -1,5 +1,5 @@
 import { hasEnvVars } from "@/utils/supabase/check-env-vars";
-import { createClient } from "@/utils/supabase/server";
+// import { createClient } from "@/utils/supabase/server";
 
 export default async function AuthButton() {
     // const {
