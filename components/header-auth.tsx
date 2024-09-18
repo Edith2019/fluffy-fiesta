@@ -1,11 +1,10 @@
 import { hasEnvVars } from "@/utils/supabase/check-env-vars";
-
 import { createClient } from "@/utils/supabase/server";
 
 export default async function AuthButton() {
-    const {
-        data: { user },
-    } = await createClient().auth.getUser();
+    // const {
+    //     data: { user },
+    // } = await createClient().auth.getUser();
 
     if (!hasEnvVars) {
         return (
