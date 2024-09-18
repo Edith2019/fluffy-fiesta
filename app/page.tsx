@@ -1,8 +1,8 @@
 // import Image from "next/image";
-import { signUpAction } from "@/app/actions";
-import { FormMessage, Message } from "@/components/form-message";
+// import { signUpAction } from "@/app/actions";
+// import { FormMessage, Message } from "@/components/form-message";
 
-export default function Home({ searchParams }: { searchParams: Message }) {
+export default function Home() {
     // const { data, error } = await supabase.from("countries").select();
     return (
         <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
